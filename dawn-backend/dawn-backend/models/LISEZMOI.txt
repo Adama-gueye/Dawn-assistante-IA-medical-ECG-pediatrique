@@ -1,0 +1,6 @@
+Dossier des modèles (non versionné). Contenu attendu :
+
+  dawn_ecg_model_final.pt     6 modèles HuBERT-ECG affinés (~730 Mo)    -> python scripts/telecharger_modele.py
+  hubert-ecg-small/           config.json + code Hugging Face (public)  -> python scripts/telecharger_hubert.py
+
+Tant que ces deux éléments sont absents, l'analyse ECG renvoie une réponse simulée explicitement signalée.

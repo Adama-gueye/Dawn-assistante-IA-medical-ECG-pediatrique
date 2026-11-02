@@ -1,0 +1,59 @@
+OK    seuil brut A (summary.json)                                    recalculé=0.490000  notebook=0.490000
+OK    seuil brut C (summary.json)                                    recalculé=0.440000  notebook=0.440000
+OK    seuil brut D (summary.json)                                    recalculé=0.300000  notebook=0.300000
+OK    seuil brut E (summary.json)                                    recalculé=0.270000  notebook=0.270000
+OK    seuil brut F (summary.json)                                    recalculé=0.330000  notebook=0.330000
+OK    seuil brut G (summary.json)                                    recalculé=0.455000  notebook=0.455000
+OK    seuil brut H (summary.json)                                    recalculé=0.360000  notebook=0.360000
+OK    seuil brut I (summary.json)                                    recalculé=0.440000  notebook=0.440000
+OK    seuil brut J (summary.json)                                    recalculé=0.330000  notebook=0.330000
+OK    seuil brut K (summary.json)                                    recalculé=0.440000  notebook=0.440000
+OK    seuil brut L (summary.json)                                    recalculé=0.450000  notebook=0.450000
+OK    seuil brut M (summary.json)                                    recalculé=0.160000  notebook=0.160000
+OK    ECE globale AVANT calibration (test)                           recalculé=0.113319  notebook=0.113319
+OK    ECE globale APRÈS Platt (test)                                 recalculé=0.015134  notebook=0.015134
+OK    NLL test après Platt                                           recalculé=0.211056  notebook=0.211056
+OK    macro-F1 test, seuils bruts (summary.json)                     recalculé=0.555043  notebook=0.555043
+      macro-F1 test après recalibrage = 0.5511   (le notebook affichait 0.5511)
+OK    conforme α=0.05 couverture_positifs                            recalculé=0.953610  notebook=0.953610
+OK    conforme α=0.05 couverture_negatifs                            recalculé=0.951279  notebook=0.951279
+OK    conforme α=0.05 pct_decisions_certaines                        recalculé=43.427887  notebook=43.427887
+OK    conforme α=0.05 erreur_parmi_decisions_certaines               recalculé=0.111469  notebook=0.111469
+OK    conforme α=0.10 couverture_positifs                            recalculé=0.903250  notebook=0.903250
+OK    conforme α=0.10 couverture_negatifs                            recalculé=0.898250  notebook=0.898250
+OK    conforme α=0.10 pct_decisions_certaines                        recalculé=70.771741  notebook=70.771741
+OK    conforme α=0.10 erreur_parmi_decisions_certaines               recalculé=0.142824  notebook=0.142824
+OK    conforme α=0.20 couverture_positifs                            recalculé=0.813198  notebook=0.813198
+OK    conforme α=0.20 couverture_negatifs                            recalculé=0.801577  notebook=0.801577
+OK    conforme α=0.20 pct_decisions_certaines                        recalculé=91.107338  notebook=91.107338
+OK    conforme α=0.20 erreur_parmi_decisions_certaines               recalculé=0.152056  notebook=0.152056
+OK    seuil sécurité rappel90 A                                      recalculé=0.150000  notebook=0.150000
+OK    seuil sécurité rappel90 C                                      recalculé=0.200000  notebook=0.200000
+OK    seuil sécurité rappel90 D                                      recalculé=0.020000  notebook=0.020000
+OK    seuil sécurité rappel90 E                                      recalculé=0.020000  notebook=0.020000
+OK    seuil sécurité rappel90 F                                      recalculé=0.020000  notebook=0.020000
+OK    seuil sécurité rappel90 G                                      recalculé=0.020000  notebook=0.020000
+OK    seuil sécurité rappel90 H                                      recalculé=0.020000  notebook=0.020000
+OK    seuil sécurité rappel90 I                                      recalculé=0.050000  notebook=0.050000
+OK    seuil sécurité rappel90 J                                      recalculé=0.060000  notebook=0.060000
+OK    seuil sécurité rappel90 K                                      recalculé=0.070000  notebook=0.070000
+OK    seuil sécurité rappel90 L                                      recalculé=0.220000  notebook=0.220000
+OK    seuil sécurité rappel90 M                                      recalculé=0.120000  notebook=0.120000
+
+=> TOUT CONCORDE AVEC LE NOTEBOOK
+
+incertitude par ECG (entropie moyenne), tertiles du test : [0.2044, 0.2475]
+précision/rappel par catégorie aux seuils calibrés (test) :
+  A: n= 512 précision=0.551 rappel=0.748 f1=0.635 ambigu=18%
+  C: n=1066 précision=0.698 rappel=0.842 f1=0.763 ambigu=28%
+  D: n= 131 précision=0.351 rappel=0.405 f1=0.376 ambigu=31%
+  E: n=  89 précision=0.575 rappel=0.607 f1=0.590 ambigu=33%
+  F: n=  65 précision=0.640 rappel=0.492 f1=0.556 ambigu=14%
+  G: n=  19 précision=0.591 rappel=0.684 f1=0.634 ambigu=9%
+  H: n= 120 précision=0.631 rappel=0.342 f1=0.443 ambigu=30%
+  I: n= 298 précision=0.739 rappel=0.762 f1=0.750 ambigu=8%
+  J: n= 287 précision=0.340 rappel=0.453 f1=0.389 ambigu=40%
+  K: n= 336 précision=0.608 rappel=0.711 f1=0.656 ambigu=10%
+  L: n=1098 précision=0.717 rappel=0.741 f1=0.729 ambigu=39%
+  M: n=  10 précision=0.054 rappel=0.300 f1=0.092 ambigu=90%
+écrit : calibration_artifacts.json

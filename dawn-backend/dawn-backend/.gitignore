@@ -1,0 +1,14 @@
+# Secrets et données locales — ne jamais versionner
+.env
+venv/
+__pycache__/
+*.pyc
+app/uploads/
+
+# Modèle (730 Mo) et code HuBERT téléchargés : se récupèrent avec scripts/telecharger_modele.py et scripts/telecharger_hubert.py
+models/*.pt
+models/*.json
+models/hubert-ecg-small/
+
+# Mesures de temps de réponse
+logs/

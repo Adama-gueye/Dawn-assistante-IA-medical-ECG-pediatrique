@@ -1,0 +1,372 @@
+{
+  "version": 1,
+  "origine": "reconstruit depuis predictions_test_val.npz (ENS, validation) avec le code des cellules 16 et 33 du notebook DAWN V6 ; chaque valeur a été comparée aux fichiers produits par le notebook (voir verification_calibration.txt)",
+  "categories": [
+    "A",
+    "C",
+    "D",
+    "E",
+    "F",
+    "G",
+    "H",
+    "I",
+    "J",
+    "K",
+    "L",
+    "M"
+  ],
+  "ensemble": "moyenne arithmétique des probabilités des 6 modèles (ASL et CB × graines 42, 1337, 2024), puis moyenne sur les fenêtres",
+  "eps": 1e-06,
+  "platt": {
+    "A": {
+      "coef": 1.8877472638417696,
+      "intercept": -0.6310199946788251
+    },
+    "C": {
+      "coef": 1.5667278690990445,
+      "intercept": -0.5460461216327186
+    },
+    "D": {
+      "coef": 2.9665380215303983,
+      "intercept": 0.8498937752253647
+    },
+    "E": {
+      "coef": 1.9741564041330801,
+      "intercept": -0.4115033670983425
+    },
+    "F": {
+      "coef": 2.7667731864958673,
+      "intercept": -0.06749125720017955
+    },
+    "G": {
+      "coef": 2.8354150817774575,
+      "intercept": -0.18388500642804792
+    },
+    "H": {
+      "coef": 2.2445702998218824,
+      "intercept": 0.008904069628066521
+    },
+    "I": {
+      "coef": 1.7500773753739258,
+      "intercept": -0.5731485923269032
+    },
+    "J": {
+      "coef": 1.7479034182709026,
+      "intercept": -0.701335285469799
+    },
+    "K": {
+      "coef": 1.7152497500755215,
+      "intercept": -0.6378854976265843
+    },
+    "L": {
+      "coef": 1.5027967032189524,
+      "intercept": -0.5360745410691065
+    },
+    "M": null
+  },
+  "platt_note": "p_calibree = sigmoid(coef * logit(p_ensemble) + intercept) ; null = pas de calibration (moins de 10 positifs en validation)",
+  "seuils_bruts": {
+    "A": 0.48999999999999994,
+    "C": 0.43999999999999995,
+    "D": 0.3,
+    "E": 0.26999999999999996,
+    "F": 0.32999999999999996,
+    "G": 0.45499999999999996,
+    "H": 0.36,
+    "I": 0.43999999999999995,
+    "J": 0.32999999999999996,
+    "K": 0.43999999999999995,
+    "L": 0.44999999999999996,
+    "M": 0.15999999999999998
+  },
+  "seuils_bruts_note": "à appliquer aux probabilités NON calibrées de l'ensemble (ce que contient le .pt)",
+  "seuils_calibres": {
+    "A": 0.31,
+    "C": 0.27999999999999997,
+    "D": 0.15999999999999998,
+    "E": 0.09,
+    "F": 0.11999999999999998,
+    "G": 0.32999999999999996,
+    "H": 0.25999999999999995,
+    "I": 0.25999999999999995,
+    "J": 0.16999999999999996,
+    "K": 0.24999999999999994,
+    "L": 0.39999999999999997,
+    "M": 0.15999999999999998
+  },
+  "seuils_calibres_note": "à appliquer aux probabilités calibrées (macro-F1 test 0.5511)",
+  "seuils_securite_rappel90": {
+    "A": 0.15,
+    "C": 0.2,
+    "D": 0.02,
+    "E": 0.02,
+    "F": 0.02,
+    "G": 0.02,
+    "H": 0.02,
+    "I": 0.05,
+    "J": 0.06,
+    "K": 0.07,
+    "L": 0.22,
+    "M": 0.12
+  },
+  "conforme": {
+    "0.05": {
+      "q": [
+        [
+          0.6312537201097009,
+          0.9269088374561768
+        ],
+        [
+          0.7279343942898325,
+          0.8476861449450498
+        ],
+        [
+          0.1381823613677362,
+          0.9810613208545401
+        ],
+        [
+          0.04311006924658012,
+          0.9899709045158857
+        ],
+        [
+          0.025030124308118684,
+          0.9935481428466498
+        ],
+        [
+          0.002721402760381797,
+          null
+        ],
+        [
+          0.07967463717146805,
+          0.9904388070237515
+        ],
+        [
+          0.19290248276330157,
+          0.9704851259153937
+        ],
+        [
+          0.28436978168627847,
+          0.9533970149810119
+        ],
+        [
+          0.3221212069031003,
+          0.946878632045998
+        ],
+        [
+          0.7349441788525908,
+          0.8284821640580099
+        ],
+        [
+          0.1361745148897171,
+          null
+        ]
+      ]
+    },
+    "0.10": {
+      "q": [
+        [
+          0.4309359329677124,
+          0.8451553104194746
+        ],
+        [
+          0.5578811291895506,
+          0.7946206721336444
+        ],
+        [
+          0.08647495215117029,
+          0.971857777274593
+        ],
+        [
+          0.02872967975150653,
+          0.9872064609906811
+        ],
+        [
+          0.017544559940280258,
+          0.9880477925556121
+        ],
+        [
+          0.0015870801211494978,
+          0.998945348879144
+        ],
+        [
+          0.044991050124291276,
+          0.9825593402577716
+        ],
+        [
+          0.09112429918645581,
+          0.9486232015803706
+        ],
+        [
+          0.18108788446286117,
+          0.9399728203774875
+        ],
+        [
+          0.15389183465091305,
+          0.9241603504576742
+        ],
+        [
+          0.5819052623992942,
+          0.7747142513936689
+        ],
+        [
+          0.12054818123579025,
+          null
+        ]
+      ]
+    },
+    "0.20": {
+      "q": [
+        [
+          0.2236978532828222,
+          0.7422551853666578
+        ],
+        [
+          0.3710386629136946,
+          0.6785641413895849
+        ],
+        [
+          0.05211921145747933,
+          0.9596334307369614
+        ],
+        [
+          0.019821606738484987,
+          0.9786945380897096
+        ],
+        [
+          0.01306893310410695,
+          0.9798933410673822
+        ],
+        [
+          0.0010287843662579732,
+          0.9654934100763773
+        ],
+        [
+          0.029325263626416742,
+          0.9678024972899462
+        ],
+        [
+          0.04913708096842384,
+          0.8407691218631322
+        ],
+        [
+          0.11722210971628033,
+          0.917716018314401
+        ],
+        [
+          0.07961848235726743,
+          0.8774675850799791
+        ],
+        [
+          0.4235236481039534,
+          0.6753961164021968
+        ],
+        [
+          0.1045934185385704,
+          0.8732186406850815
+        ]
+      ]
+    }
+  },
+  "conforme_note": "q[c][y] ; null = infini. Étiquette y retenue pour la catégorie c si 1-(p si y==1 sinon 1-p) <= q[c][y] ; les deux étiquettes retenues = ambigu, aucune = vide",
+  "metriques_test_reference": {
+    "macro_f1": 0.5550425404742502,
+    "micro_f1": 0.6640994608867862,
+    "samples_f1": 0.6581280241487991,
+    "macro_auc": 0.8893482133883777,
+    "mAP": 0.5674842136531835,
+    "hamming_loss": 0.10164469303502463,
+    "exact_match": 0.33519776268477824
+  },
+  "metriques_test_par_categorie": {
+    "A": {
+      "support_test": 512,
+      "precision": 0.5511,
+      "rappel": 0.748,
+      "f1": 0.6346,
+      "pct_ambigu_conforme": 17.7
+    },
+    "C": {
+      "support_test": 1066,
+      "precision": 0.6981,
+      "rappel": 0.8415,
+      "f1": 0.7631,
+      "pct_ambigu_conforme": 27.9
+    },
+    "D": {
+      "support_test": 131,
+      "precision": 0.351,
+      "rappel": 0.4046,
+      "f1": 0.3759,
+      "pct_ambigu_conforme": 31.3
+    },
+    "E": {
+      "support_test": 89,
+      "precision": 0.5745,
+      "rappel": 0.6067,
+      "f1": 0.5902,
+      "pct_ambigu_conforme": 32.8
+    },
+    "F": {
+      "support_test": 65,
+      "precision": 0.64,
+      "rappel": 0.4923,
+      "f1": 0.5565,
+      "pct_ambigu_conforme": 14.1
+    },
+    "G": {
+      "support_test": 19,
+      "precision": 0.5909,
+      "rappel": 0.6842,
+      "f1": 0.6341,
+      "pct_ambigu_conforme": 9.1
+    },
+    "H": {
+      "support_test": 120,
+      "precision": 0.6308,
+      "rappel": 0.3417,
+      "f1": 0.4432,
+      "pct_ambigu_conforme": 30.4
+    },
+    "I": {
+      "support_test": 298,
+      "precision": 0.7394,
+      "rappel": 0.7617,
+      "f1": 0.7504,
+      "pct_ambigu_conforme": 7.8
+    },
+    "J": {
+      "support_test": 287,
+      "precision": 0.3403,
+      "rappel": 0.453,
+      "f1": 0.3886,
+      "pct_ambigu_conforme": 40.5
+    },
+    "K": {
+      "support_test": 336,
+      "precision": 0.6081,
+      "rappel": 0.7113,
+      "f1": 0.6557,
+      "pct_ambigu_conforme": 10.3
+    },
+    "L": {
+      "support_test": 1098,
+      "precision": 0.7165,
+      "rappel": 0.7413,
+      "f1": 0.7287,
+      "pct_ambigu_conforme": 38.6
+    },
+    "M": {
+      "support_test": 10,
+      "precision": 0.0545,
+      "rappel": 0.3,
+      "f1": 0.0923,
+      "pct_ambigu_conforme": 90.3
+    }
+  },
+  "metriques_test_par_categorie_note": "mesurées sur le jeu de test, aux seuils calibrés ; support_test < 30 = évaluation peu fiable",
+  "incertitude_tertiles": [
+    0.20438757165452995,
+    0.24745243436413075
+  ],
+  "incertitude_note": "entropie binaire moyenne des 12 catégories (probabilités calibrées) ; < tertile 1 = faible, < tertile 2 = moyenne, sinon élevée"
+}
