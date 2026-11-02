@@ -222,4 +222,4 @@ Encadrement : M. Ibrahima Sy.
 
 ## Licence
 
-À préciser (par exemple MIT pour le code). Le jeu de données ZZU Pediatric ECG et les modèles pré-entraînés utilisés ont leurs propres licences et conditions d'utilisation.
+Le jeu de données ZZU Pediatric ECG et les modèles pré-entraînés utilisés ont leurs propres licences et conditions d'utilisation.
